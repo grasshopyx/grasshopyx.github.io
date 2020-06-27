@@ -323,8 +323,10 @@
     <div class="time"><script type="text/javascript">
         var myDate = new Date();
         var myMonth = myDate.getMonth() + 1;
-        var myDay = myDate.getDate();
-        document.write("有效期：2020-" + p(myMonth.toLocaleString()) + "-" + p(myDay.toLocaleString()) + " - 2020-" + p(myMonth.toLocaleString()) + "-" + p((myDay).toLocaleString()))
+        // var myDay = myDate.getDate();
+	var startDate = myDate.getDate() - 1;
+	var endDate = myDate.getDate() + 3;
+        document.write("有效期：2020-" + p(myMonth.toLocaleString()) + "-" + p(startDate.toLocaleString()) + " - 2020-" + p(myMonth.toLocaleString()) + "-" + p((endDate).toLocaleString()))
         </script></div>
         
     
